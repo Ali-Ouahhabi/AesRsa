@@ -18,7 +18,7 @@ import __builtin__
 
 from cipher_structure import CipherStructure
 
-example = '''python fcrypt.py -e ./KeyA/A_certificate.crt ./KeyB/B_privateKey.key ./Test/plain.txt ./Test/ciphertext.txt
+example = ''' python fcrypt.py -e ./KeyA/A_certificate.crt ./KeyB/B_privateKey.key ./Test/plain.txt ./Test/ciphertext.txt
 python fcrypt.py -d ./KeyA/A_privateKey.key ./KeyB/B_certificate.crt ./Test/ciphertext.txt ./Test/plain.txt '''
 
 
