@@ -154,7 +154,7 @@ def enc_arg():
         else:
             sys.exit()
     else:
-        ciphertext_file = open(sys.argv[5], "w")
+        ciphertext_file = open(sys.argv[5], "wb")
 
 
 def dec_arg():
