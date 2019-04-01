@@ -10,21 +10,21 @@ The following programm implements AES in GCM mode to provide encryption and decr
 
 The generated ciphered file is the serialization of an object from the class CipherStructure containing The encryption of the neccessary keys to decrypt the ciphered text, the signature and ofcourse the encrypted text.
 
-  The decryption is processed as follows:
+ ### The decryption is processed as follows:
   
 	  Deserializing the ciphered file 
-	  verifying the signarure: if the verification failed the program will exit with message ">> ERROR signature verification     failed" otherwise it will proceed 
+	  verifying the signarure: if the verification failed the program will exit with message ">> ERROR signature verification failed" otherwise it will proceed 
 	  decrypting the key, the initializing vector and the tag
-	  decrypting the ciphered text and store it to the file provided in the argument.
+	  decrypting the ciphered text and store it to the provided file 
 
 
 
 
+### Execution example
 
 
+	Command Line: ENCRYPT.<br/>
+	python fcrypt.py -e ./KeyA/A_certificate.crt ./KeyB/B_privateKey.key ./Test/plain.txt ./Test/ciphertext.txt
 
-Command Line: ENCRYPT.<br/>
-python fcrypt.py -e ./KeyA/A_certificate.crt ./KeyB/B_privateKey.key ./Test/plain.txt ./Test/ciphertext.txt
-
-Command Line: DECRYPT.<br/>
-python fcrypt.py -d ./KeyA/A_privateKey.key ./KeyB/B_certificate.crt ./Test/ciphertext.txt ./Test/plain.txt
+	Command Line: DECRYPT.<br/>
+	python fcrypt.py -d ./KeyA/A_privateKey.key ./KeyB/B_certificate.crt ./Test/ciphertext.txt ./Test/plain.txt
