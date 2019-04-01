@@ -1,6 +1,6 @@
 # AesRsa [python 2.7]
 
-The following programm implements AES in GCM mode to provide encryption and decryption and RSE algorithm for user integrity and confidentilality.
+The following programm implements AES in GCM mode to provide encryption and decryption and RSA algorithm for user integrity and confidentilality.
 
 	The encryption & decryption is done by AES GCM mode with a gnenerated key of 256bits.
 
