@@ -1,4 +1,4 @@
-# AesRsa
+# AesRsa [python 2.7]
 
 python fcrypt.py -e ./KeyA/A_certificate.crt ./KeyB/B_privateKey.key ./Test/plain.txt ./Test/ciphertext.txt
 
