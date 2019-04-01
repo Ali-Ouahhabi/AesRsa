@@ -86,6 +86,7 @@ def dec():
                                          utils.Prehashed(chosen_hash))
     except:
         print ">> ERROR signature verification failed"
+        sys.exit()
 
     key = private_key.decrypt(tls.get_key(), padding_)                      # decrypting key
     iv = private_key.decrypt(tls.get_initialization_vector(), padding_)     # decrypting iv
